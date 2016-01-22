@@ -14,11 +14,11 @@ The module balances request in round-robin fashion if the pools have zero waitin
 
 * [Installation](#installation)
 * [Usage](#usage)
-  * [Step 1 - Create cluster pool using a poolFactory object](#step-1---create-node--pool--cluster-using-a-factory-object)
-  * [Step 2 - Add servers to the node-pool cluster](#step-2---add-servers-to-the-node-pool-cluster)
-  * [Step 3 - Use cluster pool in your code to acquire/release resources](#step-3---use-cluster-pool-in-your-code-to-acquirerelease-resources)
+  * [Create cluster pool using a poolFactory object](#create-an-object-of-node-pool-cluster-using-a-poolfactory-object)
+  * [Add servers to the node-pool cluster](#add-servers-to-the-node-pool-cluster)
+  * [Use cluster pool in your code to acquire/release resources](#use-cluster-pool-in-your-code-to-acquirerelease-resources)
 * [How the load balancing works](#how-the-load-balancing-works)
-* [Additional features](#additional-features)
+* [Additional functions](#additional-functions)
 * [Run tests](#run-tests)
 * [Version History](#version-history)
 * [License](#license) (The MIT License)
@@ -34,7 +34,7 @@ $ npm install node-pool-cluster
 The module uses similar convention used in [generic-pool module](https://github.com/coopernurse/node-pool).
 Any one familiar with node-pool module, will be able to easily switch to node-pool-cluster module, with minimal changes.
 
-### Step 1 - Create an object of node-pool-cluster using a poolFactory object
+### Create an object of node-pool-cluster using a poolFactory object
 
 ```javascript
 // Create a MySQL connection pool with a max of 5 connections, and a min of 2
@@ -55,7 +55,7 @@ One thing to note that poolFactory object doesn't contain create function, which
 However create function will have to passed when adding a server to the cluster.
 For documentation of poolFactory object fields (and other pool features), please refer to [generic-pool documentation](https://github.com/coopernurse/node-pool#documentation).
 
-### Step 2 - Add servers to the node-pool cluster
+### Add servers to the node-pool cluster
 
 ```javascript
 var MySQLClient = require('mysql').Client;
@@ -90,7 +90,7 @@ nodePoolCluster.addPool(function(callback) {
 In the above example, we have added two servers(host1 & host2) to the cluster. 
 Each of these servers will have a separate connection pool created with settings from the poolFactory object used to create server pool.
 
-### Step 3 - Use cluster pool in your code to acquire/release resources
+### Use cluster pool in your code to acquire/release resources
 
 ```javascript
 // Acquire connection - callback function is called once a resource becomes
