@@ -1,10 +1,10 @@
 {
   "name": "node-pool-cluster",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Pooling generic resources for multi-server environment",
-  "main": "index.js",
+  "main": "lib/node-pool-cluster.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/node-pool-cluster.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,18 @@
     "pooling",
     "slaves"
   ],
-  "author": "Kapil Joshi <kjoshi1988@gmail.com>",
-  "license": "ISC",
+  "author": {
+    "name": "Kapil Joshi",
+    "email": "kjoshi1988@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "generic-pool": ">=2.4.0",
+    "underscore": ">=1.8.0"
+  },
+  "devDependencies": {
+    "mocha": ">=2.3.0"
+  },
   "bugs": {
     "url": "https://github.com/kjoshi1988/node-pool-cluster/issues"
   },
