@@ -148,16 +148,8 @@ Drains all the pool in the server gracefully.
 
 ```
 $ npm install mocha
-$ node_modules/mocha/bin/mocha
+$ npm test
 ```
-
-You can avoid providing path to mocha bin if you install mocha module globally: ```npm install -g mocha```.
-
-The included test simulates pool cluster of two servers with pool of maximum 5 connections to each one. 
-There is a simulated lag time for each of servers of 1000 and 50 requests for connections performed every 100 milliseconds. 
-As the requests are made, some server pools are getting full, some connections are released,so this demonstrates how less-busy 
-servers from cluster are chosen. 
-In summary, most buys server serves minimum connections.
 
 ## Version History
 
@@ -169,7 +161,7 @@ In summary, most buys server serves minimum connections.
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Kapil Joshi
+Copyright (c) 2016 Kapil Joshi  <<kjoshi1988@gmail.com>>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
