@@ -14,7 +14,7 @@ The module balances request in round-robin fashion if the pools have zero waitin
 
 * [Installation](#installation)
 * [Usage](#usage)
-  * [Step 1 - Create cluster pool using a poolFactory object](#step-1---create-node-pool-cluster-using-a-factory-object)
+  * [Step 1 - Create cluster pool using a poolFactory object](#step-1---create-node--pool--cluster-using-a-factory-object)
   * [Step 2 - Add servers to the node-pool cluster](#step-2---add-servers-to-the-node-pool-cluster)
   * [Step 3 - Use cluster pool in your code to acquire/release resources](#step-3---use-cluster-pool-in-your-code-to-acquirerelease-resources)
 * [How the load balancing works](#how-the-load-balancing-works)
@@ -51,7 +51,7 @@ var nodePoolCluster = NodePoolCluster.initCluster({
 });
 ```
 
-One thin to note that poolFactory object doesn't contain create function, which is there in generic-pool module.
+One thing to note that poolFactory object doesn't contain create function, which is there in generic-pool module.
 However create function will have to passed when adding a server to the cluster.
 For documentation of poolFactory object fields (and other pool features), please refer to [generic-pool documentation](https://github.com/coopernurse/node-pool#documentation).
 
