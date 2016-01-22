@@ -2,6 +2,8 @@ var assert = require('assert');
 var NodePoolCluster = require('..');
 
 describe('NodePoolCluster', function () {
+    this.timeout(20000);
+
     var clientCreatedPerPool = [0, 0];
     var acquireCountsPerPool = [0, 0];
     var releasedPoolCount = 0;
@@ -32,22 +34,22 @@ describe('NodePoolCluster', function () {
                 setTimeout(function () {
                     serverPool.release(client);
                     releasedPoolCount++;
-                    if (releasedPoolCount == 100) {
+                    if (releasedPoolCount == 50) {
                         done();
                     }
-                }, 0);
+                }, 1000);
             });
         }
 
-        for (var i = 0; i < 100; i++) {
-            setTimeout(acquire, 0);
+        for (var i = 0; i < 50; i++) {
+            setTimeout(acquire, i * 100);
         }
     });
 
     after(function () {
         assert.equal(5, clientCreatedPerPool[0]); //no. of clients for first pool
         assert.equal(5, clientCreatedPerPool[1]); //no. of clients for second pool
-        assert.equal(50, acquireCountsPerPool[0]);
-        assert.equal(50, acquireCountsPerPool[1]);
+        assert.equal(26, acquireCountsPerPool[0]);
+        assert.equal(24, acquireCountsPerPool[1]);
     });
 });
