@@ -157,6 +157,10 @@ $ npm test
 
 * First release.
 
+### 0.1.1 - Feb 7, 2016
+
+* Removing node modules and adding it to .npmignore and .gitignore.
+
 ## License
 
 The MIT License (MIT)
