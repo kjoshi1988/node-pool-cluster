@@ -1,7 +1,7 @@
 # Change Log
 
 ## [1.0.1] - Feb 8, 2016
-* Fixing bug when acquireNewPoolOnError is true.
+* Fixing bug when acquireNewPoolOnError is enabled.
 
 ## [1.0.0] - Feb 8, 2016
 * Major version release.
