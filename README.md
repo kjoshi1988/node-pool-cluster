@@ -20,7 +20,7 @@ The module balances request in round-robin fashion if the pools have zero waitin
 * [How the load balancing works](#how-the-load-balancing-works)
 * [Additional functions](#additional-functions)
 * [Run tests](#run-tests)
-* [Version History](#version-history)
+* [Version History](#history)
 * [License](#license) (The MIT License)
 
 ## Installation
@@ -151,15 +151,9 @@ $ npm install mocha
 $ npm test
 ```
 
-## Version History
+## History
 
-### 0.1.0 - Jan 22, 2016
-
-* First release.
-
-### 0.1.1 - Feb 7, 2016
-
-* Removing node modules and adding it to .npmignore and .gitignore.
+The history has been moved to the [CHANGELOG](CHANGELOG.md)
 
 ## License
 

@@ -1,6 +1,6 @@
 {
   "name": "node-pool-cluster",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Pooling generic resources for multi-server environment",
   "main": "lib/node-pool-cluster.js",
   "scripts": {
