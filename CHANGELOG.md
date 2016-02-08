@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.1] - Feb 8, 2016
+* Fixing bug when acquireNewPoolOnError is true.
+
 ## [1.0.0] - Feb 8, 2016
 * Major version release.
 * Optional check for other pools in cluster when error occurs acquiring connection in current pool.
