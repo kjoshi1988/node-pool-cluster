@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.2] - March 22, 2016
+* Fixing bug when acquireNewPoolOnError is enabled, when only one pool is there in the cluster.
+
 ## [1.0.1] - Feb 8, 2016
 * Fixing bug when acquireNewPoolOnError is enabled.
 
