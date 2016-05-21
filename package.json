@@ -1,6 +1,6 @@
 {
   "name": "node-pool-cluster",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pooling generic resources for multi-server environment",
   "main": "lib/node-pool-cluster.js",
   "scripts": {
@@ -27,8 +27,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "generic-pool": ">=2.4.0",
-    "underscore": ">=1.8.0"
+    "generic-pool": ">=2.4.2",
+    "underscore": ">=1.8.3"
   },
   "devDependencies": {
     "mocha": ">=2.3.0"

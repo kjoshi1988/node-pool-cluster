@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.3] - May 21, 2016
+* Adding round robin support.
+
 ## [1.0.2] - March 22, 2016
 * Fixing bug when acquireNewPoolOnError is enabled, when only one pool is there in the cluster.
 
